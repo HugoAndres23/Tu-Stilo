@@ -289,18 +289,19 @@ nav ul a:hover {
 }
 
 .hero-img {
-  background-image: url("../src/img/Assets/logo.png");
   width: 45rem;
-  height: 45rem;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
+}
+
+@media (max-width: 900px) {
+  .hero-img {
+    width: auto;
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
-  .hero-img {
-    width: 28rem;
-    height: 28rem;
+  .hero-img img{
+    width: 35rem;
+    height: 35rem;
   }
 }
 
@@ -603,6 +604,7 @@ nav ul a:hover {
   gap: 4rem;
   flex-wrap: wrap;
   margin-top: 6rem;
+  justify-content: center;
 }
 @media (max-width: 750px) {
   .contact_icons {
